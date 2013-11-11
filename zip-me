@@ -1,0 +1,27 @@
+#! /bin/bash
+
+PARAMS=(`echo $*`)
+NPARAMS=$#
+
+if [[ $NPARAMS == 0 && -f zip-me ]]
+then
+  PARAMS=(`cat zip-me`)
+elif [[ $NPARAMS == 0 ]]
+then
+  exit -1
+fi
+
+ZIP=${PARAMS[0]}
+FILES=${PARAMS[@]:1}
+
+for file in $FILES
+do
+  if [[ ! -f $file ]]
+  then
+
+    echo "File \""$file"\" not found"
+    exit -1
+  fi
+done
+
+zip $ZIP $FILES
