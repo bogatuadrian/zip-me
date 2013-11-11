@@ -13,6 +13,7 @@ Run:
 ### Format of the `zip-me` file
 
 `zip-me`
+
     &lt;the resulting zip filename&gt;
     &lt;file1&gt;
     &lt;file2&gt;
