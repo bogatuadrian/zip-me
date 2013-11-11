@@ -19,8 +19,8 @@ do
   if [[ ! -f $file ]]
   then
 
-    echo "File \""$file"\" not found"
-    exit -1
+    echo "zip-me: File \""$file"\" not found"
+    exit 2
   fi
 done
 
