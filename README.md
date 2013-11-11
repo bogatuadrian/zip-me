@@ -14,7 +14,7 @@ Run:
 
 `zip-me`
 
-    &lt;the resulting zip filename&gt;
-    &lt;file1&gt;
-    &lt;file2&gt;
+    <the resulting zip filename>
+    <file1>
+    <file2>
     ...
