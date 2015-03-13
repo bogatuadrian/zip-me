@@ -8,7 +8,7 @@ then
   PARAMS=(`cat .zipme`)
 elif [[ $NPARAMS == 0 ]]
 then
-  exit -1
+  touch .zipme
 fi
 
 ZIP=${PARAMS[0]}
