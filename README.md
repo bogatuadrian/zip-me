@@ -1,18 +1,18 @@
-# Zip-Me
+# ZipMe
 
-A bash script for zip-compressing multiple files.
+A bash script for zip-compressing multiple files or folders.
 
 ### Usage
 
-Create a file named `zip-me` containing the desired arhive's name on the
-first line, followed by the names of the files you want to archive.
+Create a file named `zipme` containing the desired arhive's name on the
+first line, followed by the names of the files you want to zip.
 
 Run:
-> $ zip-me
+> $ zipme
 
-### Format of the `zip-me` file
+### Format of the `zipme` file
 
-`zip-me`
+`zipme`
 
     <the resulting zip filename>
     <file1>
