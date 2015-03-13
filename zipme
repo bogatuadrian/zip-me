@@ -3,9 +3,9 @@
 PARAMS=(`echo $*`)
 NPARAMS=$#
 
-if [[ $NPARAMS == 0 && -f zip-me ]]
+if [[ $NPARAMS == 0 && -f .zipme ]]
 then
-  PARAMS=(`cat zip-me`)
+  PARAMS=(`cat .zipme`)
 elif [[ $NPARAMS == 0 ]]
 then
   exit -1
@@ -16,7 +16,7 @@ FILES=${PARAMS[@]:1}
 
 for file in $FILES
 do
-  if [[ ! -f $file ]]
+  if [[ ! -e $file ]]
   then
 
     echo "zip-me: File \""$file"\" not found"
@@ -24,4 +24,4 @@ do
   fi
 done
 
-zip $ZIP $FILES
+zip $ZIP $FILES -r
